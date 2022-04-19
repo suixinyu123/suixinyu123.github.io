@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="amoled-dark use-big-shadow article-header-style-default">
+<html class="article-header-style-default">
 <head>
 	
 	<title>Hello World - 蒼_GodZero の 个人博客</title>
@@ -24,7 +24,7 @@
 	<meta name="theme-color-rgb" content="94,114,228">
 	<meta name="theme-color-origin" content="#5e72e4">
 	<meta name="argon-enable-custom-theme-color" content="true">
-	<meta name="theme-card-radius" content="14">
+	<meta name="theme-card-radius" content="4">
 	<meta name="theme-version" content="1.0.2">
 	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
@@ -49,13 +49,6 @@
 
 
 	
-		
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-
-		
-<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
-	
 
 	<script>
 		var argonConfig = {
@@ -75,11 +68,11 @@
 				},
 			
 			disable_pjax: false,
-			headroom: true
+			headroom: false
 		}
 	</script>
 	<script>
-		var darkmodeAutoSwitch = "time";
+		var darkmodeAutoSwitch = "false";
 		function setDarkmode(enable){
 			if (enable == true){
 				$("html").addClass("darkmode");
@@ -178,7 +171,7 @@
 </style>
 <style id="theme_cardradius_css">
 	:root{
-		--card-radius: 14px;
+		--card-radius: 4px;
 	}
 </style>
 
@@ -216,7 +209,7 @@
 							<ul class='navbar-nav navbar-nav-hover align-items-lg-center'>
 								
 										<li class='nav-item'>
-											<a href='/' class='nav-link' >
+											<a href='/home' class='nav-link' >
 												<i class='ni ni-book-bookmark d-lg-none'></i>
 												<span class='nav-link-inner--text'>首页</span>
 											</a>
@@ -296,9 +289,9 @@
 	
 	<div id="banner_container" class="banner-container container text-center">
 		
-			<div class="banner-title text-white" data-text="蒼_GodZero の 个人博客" data-interval=""><span class="banner-title-inner">&nbsp;</span>
+			<div class="banner-title text-white"><span class="banner-title-inner">蒼_GodZero の 个人博客</span>
 		
-		<span class="banner-subtitle d-block">愿你的长夏永不凋零</span></div>
+		</div>
 	</div>
 	
 		<style>
@@ -436,8 +429,6 @@
 <div id="content" class="site-content">
 
 
-	<script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
-
 
 
 
@@ -454,10 +445,8 @@
 		
 		<div id="leftbar_part1" class="widget widget_search card bg-white shadow-sm border-0">
 			<div class="leftbar-banner card-body">
-				<span class="leftbar-banner-title text-white">蒼_GodZero</span>
+				<span class="leftbar-banner-title text-white">蒼_GodZero の 个人博客</span>
 				
-				
-					<span class="leftbar-banner-subtitle text-white">你的选择都有意义</span>
 				
 			</div>
 			
@@ -505,21 +494,11 @@
 									})
 								</script>
 								
-									<style>
-										#leftbar_catalog ul {
-											counter-reset: blog_catalog_number;
-										}
-										#leftbar_catalog li.index-item > a:before {
-											content: counters(blog_catalog_number, '.') " ";
-											counter-increment: blog_catalog_number;
-										}
-									</style>
-								
 							</div>
 						
 						<div class="tab-pane fade text-center" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
-							<img id="leftbar_overview_author_image" src="https://wx4.sinaimg.cn/mw2000/c26f1742gy1h1eay1wamyj213d13dach.jpg" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
-							<h6 id="leftbar_overview_author_name">神翎</h6>
+							<img id="leftbar_overview_author_image" src="/assets/img/auther.jpg" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
+							<h6 id="leftbar_overview_author_name">蒼_GodZero の 个人博客</h6>
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
@@ -620,7 +599,7 @@
 		
 		
 			
-	<article class="post post-full card bg-white shadow-sm border-0 post-preview">
+	<article class="post post-full card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
 		<a class="post-title" href="/2022/03/29/hello-world/">Hello World</a>
@@ -791,51 +770,7 @@
 </script>
 
 
-	<div id="post_comment" class="card shadow-sm">
-		<div id="gitalk-container"></div>
-<script type="text/javascript">
-	var gitalk = new Gitalk({
-		clientID: '',
-		clientSecret: '',
-		repo: '',
-		owner: '',
-		admin: [''],
-		id: location.pathname,
-		distractionFreeMode: false
-	})
-	gitalk.render('gitalk-container');
-</script>
 
-	</div>
-
-
-	<div id="post_comment" class="card shadow-sm">
-		<div id="giscus"></div>
-<script src="https://giscus.app/client.js"
-        data-repo=""
-        data-repo-id=""
-        data-category=""
-        data-category-id=""
-        data-mapping="pathname"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
-
-	</div>
-
-
-	<div id="post_comment" class="card shadow-sm">
-		<div id="waline"></div>
-<script>
-  Waline({
-	el: '#waline',
-	serverURL: '',
-  });
-</script>
-	</div>
 
 
 <div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"><span class="page-navigation-extra-text"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>上一篇</span><a href="/2022/03/29/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" rel="prev"> 我的第一篇博客文章</a></div><div class="post-navigation-item post-navigation-next"></div></div>
@@ -864,13 +799,6 @@
 		
 		
 		
-
-		
-			<script>
-				var argonEnableCodeHighlight = true;
-			</script>
-			
-<link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css">
 
 		
 
